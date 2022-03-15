@@ -6,6 +6,11 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
 @StreamBot.on_message(filters.command(['start', 'help']))
 async def start(_, m: Message):
-    await m.reply(f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream link.',
+    await m.reply(f'Hi {m.from_user.mention(style="md")}, 
+                  I'm A simple link Generator Bot !
+
+Send me any TELEGRAM file, I'll generate instant stream/download link for you!
+
+Developed by @Pravin_boopathi',
                 
                   )
