@@ -28,7 +28,7 @@ async def media_receive_handler(_, m: Message):
     stream_link = Var.URL + str(log_msg.message_id) + '/' +quote_plus(file_name) if file_name else ''
     stream_links = f"https://KalviDudes.in"
     await m.reply_text(
-        text=f"https://m.mysteryfacts.xyz/api?api=46ecd5662bd0d0971aabba3c149adebefa2392e4&url={stream_link}",
+        text=f"https://droplink.kalvidudes.in/st?api=091f2c0a78b3766954c7dae3dffed779d8740a30&url={stream_link}",
         quote=True,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Learn something interesting 🤔', url=stream_links)]])
     )
